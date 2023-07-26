@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
   async redirects() {
     return [
       {
@@ -12,6 +8,10 @@ const nextConfig = {
         permanent: true,
       },
     ];
+  },
+  reactStrictMode: true,
+  experimental: {
+    appDir: true,
   },
   webpack: (config) => {
     config.module.rules.push({
