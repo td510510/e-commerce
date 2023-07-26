@@ -1,0 +1,12 @@
+.saleOffContainer {
+  margin-top: 130px;
+  margin-bottom: 50px;
+  .section {
+    padding: 0 100px;
+    max-width: var(--bigDesktopPx);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+  }
+}
