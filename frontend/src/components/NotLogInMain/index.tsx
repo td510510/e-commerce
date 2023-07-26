@@ -33,12 +33,21 @@ const imageMapping = new Map([
   ['new-password', '/images/new-password.png'],
 ])
 
+const imageBlurMapping = new Map([
+  ['sign-in', '/images/sign-in-small.jpg'],
+  ['sign-up', '/images/sign-up-small.jpg'],
+  ['reset-password', '/images/reset-password-small.jpg'],
+  ['check-email', '/images/check-email-small.jpg'],
+  ['verification', '/images/verification-small.jpg'],
+  ['new-password', '/images/new-password-small.jpg'],
+])
+
 const NotLogInMain: FC<NotLogInMainProps> = ({ type, title }) => {
   return (
     <main className={styles.container}>
       <div className={styles.section}>
         <div className={styles.imgWrap}>
-          <Image className={styles.img} src={imageMapping.get(type) || ''} alt='log in' fill />
+          <Image className={styles.img} src={imageMapping.get(type) || ''} alt='log in' fill placeholder='blur' blurDataURL={imageBlurMapping.get(type)} />
         </div>
         <div className={styles.content}>
           <h3>{title}</h3>
