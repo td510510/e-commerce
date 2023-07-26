@@ -11,6 +11,15 @@ const nextConfig = {
     });
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/sign-in',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
