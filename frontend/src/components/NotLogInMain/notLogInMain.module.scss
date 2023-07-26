@@ -8,9 +8,12 @@ $header: 111px;
     grid-template-columns: 1fr 1fr;
     gap: min(calc(78 / var(--bigDesktop) * 100vw), 78px);
     margin: 0 auto;
-    img {
-      object-fit: cover;
-      height: 100%;
+    .imgWrap {
+      position: relative;
+      .img {
+        object-fit: cover;
+        object-position: top;
+      }
     }
     .content {
       h3 {

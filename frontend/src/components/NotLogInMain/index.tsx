@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Image from 'next/image'
 import styles from './notLogInMain.module.scss'
 import SignInContent from './SignInContent'
 import SignUpContent from './SignUpContent'
@@ -36,7 +37,9 @@ const NotLogInMain: FC<NotLogInMainProps> = ({ type, title }) => {
   return (
     <main className={styles.container}>
       <div className={styles.section}>
-        <img src={imageMapping.get(type)} alt='log in' />
+        <div className={styles.imgWrap}>
+          <Image className={styles.img} src={imageMapping.get(type) || ''} alt='log in' fill />
+        </div>
         <div className={styles.content}>
           <h3>{title}</h3>
           {typeMapping.get(type)}
