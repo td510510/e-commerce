@@ -1,0 +1,14 @@
+:root {
+  /* color */
+  --purple-100: #8a33fd;
+  --white: #ffffff;
+  --gray-50: #333333;
+  --gray-100: #3c4242;
+  --gray-200: #807d7e;
+  --gray-300: #bebcbd;
+  --gray-400: #edeef2;
+
+  /* breakpoint */
+  --bigDesktop: 1440;
+  --bigDesktopPx: 1440px;
+}

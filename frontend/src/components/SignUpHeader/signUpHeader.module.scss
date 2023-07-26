@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--gray-300);
+  padding: 34px calc(100 / var(--bigDesktop) * 100vw) 31px;
+  .nav {
+    display: flex;
+    max-width: var(--bigDesktopPx);
+    justify-content: space-between;
+    margin: 0 auto;
+    .buttons {
+      display: flex;
+      gap: calc(29 / var(--bigDesktop) * 100vw);
+    }
+  }
+}
