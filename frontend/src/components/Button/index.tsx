@@ -11,9 +11,10 @@ interface ButtonProps {
   pathname?: string
   icon?: React.ReactNode
   option?: string
+  bgColor?: string
 }
 
-const Button: FC<ButtonProps> = ({ content, handleClick, type, pathname, icon, option }) => {
+const Button: FC<ButtonProps> = ({ content, handleClick, type, pathname, icon, option, bgColor }) => {
   const path = usePathname()
 
   return (
@@ -24,7 +25,7 @@ const Button: FC<ButtonProps> = ({ content, handleClick, type, pathname, icon, o
           }>
             {content}
           </ Link> :
-          <button onClick={handleClick} className={`${styles.button} ${option === 'primary' ? styles.active : ''} ${type === 'full' ? styles.full : ''}`}>
+          <button onClick={handleClick} className={`${styles.button} ${option === 'primary' ? styles.active : ''} ${bgColor ? styles[bgColor] : ''} ${type === 'full' ? styles.full : ''}`}>
             {icon ? <span style={{ marginRight: 12 }}>{icon}</span> : ''}
             <span>{content}</span>
           </button >

@@ -1,0 +1,28 @@
+.container {
+  height: 336px;
+  max-width: 605px;
+  background-size: cover;
+  background-position: right;
+  border-radius: 12px;
+  color: var(--white);
+  font-weight: 700;
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+  .box {
+    h6 {
+      font-style: 16px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+  }
+}

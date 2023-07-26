@@ -1,4 +1,4 @@
-import NotLogInMain from "@/components/NotLogInMain"
+import NotLogInMain from "@/containers/NotLogInMain"
 import SignUpHeader from "@/components/SignUpHeader"
 
 const Verify = () => {
