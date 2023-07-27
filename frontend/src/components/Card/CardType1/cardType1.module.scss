@@ -1,15 +1,17 @@
 .container {
   height: 336px;
   max-width: 605px;
-  background-size: cover;
-  background-position: right;
   border-radius: 12px;
   color: var(--white);
   font-weight: 700;
   padding-left: 28px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   .box {
+    position: absolute;
+    z-index: 1;
     h6 {
       font-style: 16px;
       margin-bottom: 20px;
