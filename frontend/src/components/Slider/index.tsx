@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,13 +30,13 @@ const Slide = () => {
         </div>
         <Slider {...settings} className='slide'>
           <div className={styles.slideItem}>
-            <img src="/images/product-slide-1.jpg" alt="img 1" />
+            <Image src="/images/product-slide-1.jpg" width={2880} height={1432} alt="img 1" placeholder="blur" blurDataURL="/images/blur.png" />
           </div>
           <div className={styles.slideItem}>
-            <img src="/images/product-slide-2.jpg" alt="img 1" />
+            <Image src="/images/product-slide-2.jpg" width={2880} height={1432} alt="img 2" placeholder="blur" blurDataURL="/images/blur.png" />
           </div>
           <div className={styles.slideItem}>
-            <img src="/images/product-slide-3.jpg" alt="img 1" />
+            <Image src="/images/product-slide-3.jpg" width={2880} height={1432} alt="img 3" placeholder="blur" blurDataURL="/images/blur.png" />
           </div>
         </Slider>
       </div>
